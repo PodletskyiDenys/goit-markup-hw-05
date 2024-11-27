@@ -405,153 +405,149 @@ p {
 }
 
 .footer {
-  background: #2e2f42;
-  height: 312px;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: left;
-  padding: 100px 0;
+  background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.logo-footer {
-  margin-bottom: 16px;
-  display: inline-block;
-  text-decoration: none;
+.page-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo {
+  color: #4d5ae5;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: left;
   text-transform: uppercase;
-  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
-.accent-footer {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
 
-.text-footer {
-  max-width: 264px;
-  font-weight: 400;
+.footer-accent-logo {
+  color: #f4f4fd;
+  background-color: #2e2f42;
+}
+
+.footer-left {
+  margin-right: 120px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-header-social {
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
 }
 
-.social-links-footer {
+.footer-social-links {
   display: flex;
   gap: 16px;
 }
-.social-link-team {
-  width: 40px;
-  height: 40px;
-}
 
-.social-ikon-team {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
+.social-link-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  justify-content: center;
-}
-.social-link-team .social-ikon-team:hover,
-.social-link-team .social-ikon-team:focus {
-  background-color: #31d0aa;
-}
-
-.icon-social-footer {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #f4f4fd;
 }
 
-.text-footer-social {
-  margin-bottom: 16px;
-  color: #ffffff;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-size: 16px;
-  font-weight: 500;
-}
-.box-input {
-  margin-left: 80px;
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: #31d0aa;
 }
 
-.form-email {
+.social-circle {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-form {
+  margin-left: auto;
+}
+
+.footer-header-form-subscribe {
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.form-subscribe {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 
-.text-input {
-  margin-bottom: 16px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
-
-.email-input {
+.input-form-subscrible {
   width: 264px;
   height: 40px;
-  border: 1px solid #fff;
   background-color: transparent;
-  letter-spacing: 0.04em;
-  line-height: 2;
   font-size: 12px;
-  padding-left: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
-}
-
-.email-input:hover,
-.email-input:focus {
-  border-color: #4d5ae5;
-}
-.email-input::placeholder {
-  color: #ffffff;
-}
-
-.btn-input {
-  border: none;
-  background-color: #4d5ae5;
-  color: #fff;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+}
+
+.label-form-subscrible::placeholder {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.input-form-subscrible:focus {
+  border: 1px solid #31d0aa;
+}
+
+.button.subscrible {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   border-radius: 4px;
-  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   min-width: 165px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-input:hover,
-.btn-input:focus {
-  background-color: #404bbf;
+.button.subscrible:hover,
+.button.subscrible:focus {
+  background-color: #31d0aa;
 }
 
-.subscribe-icon {
+.subscrible-footer-icon {
+  fill: #ffffff;
   margin-left: 16px;
-  fill: #fff;
 }
 
 img {
